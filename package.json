@@ -1,0 +1,31 @@
+{
+  "name": "laser-show-studio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "浏览器端激光秀编排与安全预演系统 (ILDA / WebGL2 / IEC 60825-1)",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "gen:testdata": "node --experimental-strip-types scripts/generate-test-data.ts"
+  },
+  "dependencies": {
+    "fflate": "^0.8.2",
+    "idb-keyval": "^6.2.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.7",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}
